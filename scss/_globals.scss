@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Hind', sans-serif;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    height: 16vh;
+    background-color: #2D3047;
+    font-family: 'Kumbh Sans', sans-serif;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+
+    img {
+        display: block;
+        margin: auto;
+        width: 10vh;
+    }
+
+    h1 {
+        text-align: center;
+        color: #f6f8eef3;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.sidebar {
+    font-size: 16px;
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 20%; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 0; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #A0D2C6;//#D2F1E4;//#edb458ff;
+    //overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 5vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    overflow-x: hidden;
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    a:hover {
+        color: #ad5050;
+    }
+
+    ol {
+        font-size: 85%;
+    }
+
+    li {
+        margin-bottom: 3px;
+    }
+
+    hr {
+        background-color: #88afb1;
+    }
+    
+    &_logo {
+
+        display: flex;
+        padding-left: 3vh;
+        padding-bottom: 3vh;
+        align-items: center;
+
+        img {
+            width: 12vh;
+        }
+
+        h3 {
+            padding-left: 10px;
+            font-family: 'Kumbh Sans', sans-serif;
+            color: #2e2e2e;
+        }
+    }
+}
+
+.sidebar li {
+    padding: 3px;
+    list-style-type: none;
+}
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 0%;
+    }
+}
+
+.content {
+    position: relative;
+    box-sizing: border-box;
+    height: 100%;
+    width: 80%;
+    margin-left: 20%;
+    padding-top: 5%;
+    padding-left: 2%;
+    padding-right: 20%;
+    background-color: white;//#D2F1E4;
+    color: #272829;//#454d4d;
+    line-height: 1.6;
+    font-size: 14px;
+
+    h3 {
+        font-size: 22px;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+}
+
+.subtypes {
+    text-indent: 3%;
+}
+
+.bettas p{
+    text-indent: 50px;
+}
+
+.splendens p{
+    text-indent: 5%;
+}
+
+.splendens ul {
+    //text-indent: 5%;
+    list-style-type: none;
+}
+
+.care {
+    text-indent: 5%;
+}
+
+.pg {
+
+    &_tank, &_water, &_food {
+        text-indent: 5%;
+    }
+
+}
+
+.mates p {
+    text-indent: 5%;
+}
+
+.mates ul {
+    text-indent: 5%;
+    list-style-type: none;
+}
+
+.female p{
+    text-indent: 5%;
+}
+
+.breeding p {
+    text-indent: 5%;
+}
+
+.fry p {
+    text-indent: 5%;
+}
+
+.fry h5 {
+    font-size: 14px;
+}
+
+.fry ul {
+    text-indent: 5%;
+    list-style-type: none;
+}
+
+.diseases ul {
+    text-indent: 5%;
+    list-style-type: none;
+}
+
+footer {
+    color: black;
+    font-size: 10px;
+    text-align: center;
+}
+
+hr {
+    width: 100%;
+    height: .5px;
+    border-width: 0;
+    background-color: #d1d1d1;
+    margin-left: 0;
+}
+
+.breeding img {
+    width: 35%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.splendens img {
+    display: flex;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.splendens {
+    .row {
+        display: flex;
+        align-items: center;
+        padding: 0;
+    }
+
+    .column {
+        flex: 33.33%;
+    }
+
+    .column1 {
+        flex: 70%;
+        
+        img {
+            width: 5%;
+        }
+    }
+
+}
+
+.variations {
+
+    font-weight: bold;
+    
+    img {
+        width: 70%;
+    }
+
+    ul {
+        display: flex;
+    }
+
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    .column1 img {
+        width: 45%;
+    }
+
+}
+
+.female img{
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#tfb, #variations, #common, #bc, .colors, #bt, #dfm, #bb, #bf, #bdat {
+    text-align: center;
+}
+
+#tfb, #variations, #common, #bc, #bt, #dfm, #bb, #bf, #bdat {
+    //background-color: #EF946C   ;
+    border-top: 1px solid #aaaaaa;
+    border-bottom: 1px solid #aaaaaa;
+}

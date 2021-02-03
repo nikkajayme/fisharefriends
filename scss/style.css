@@ -1,0 +1,305 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Hind', sans-serif;
+}
+
+header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 16vh;
+  background-color: #2D3047;
+  font-family: 'Kumbh Sans', sans-serif;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+header img {
+  display: block;
+  margin: auto;
+  width: 10vh;
+}
+
+header h1 {
+  text-align: center;
+  color: #f6f8eef3;
+}
+
+header a {
+  text-decoration: none;
+}
+
+.sidebar {
+  font-size: 16px;
+  height: 100%;
+  /* Full-height: remove this if you want "auto" height */
+  width: 20%;
+  /* Set the width of the sidebar */
+  position: fixed;
+  /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 0;
+  /* Stay on top */
+  top: 0;
+  /* Stay at the top */
+  left: 0;
+  background-color: #A0D2C6;
+  padding-top: 5vh;
+  padding-left: 2vh;
+  padding-right: 2vh;
+  overflow-x: hidden;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: black;
+}
+
+.sidebar a:hover {
+  color: #ad5050;
+}
+
+.sidebar ol {
+  font-size: 85%;
+}
+
+.sidebar li {
+  margin-bottom: 3px;
+}
+
+.sidebar hr {
+  background-color: #88afb1;
+}
+
+.sidebar_logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 3vh;
+  padding-bottom: 3vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sidebar_logo img {
+  width: 12vh;
+}
+
+.sidebar_logo h3 {
+  padding-left: 10px;
+  font-family: 'Kumbh Sans', sans-serif;
+  color: #2e2e2e;
+}
+
+.sidebar li {
+  padding: 3px;
+  list-style-type: none;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 0%;
+  }
+}
+
+.content {
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100%;
+  width: 80%;
+  margin-left: 20%;
+  padding-top: 5%;
+  padding-left: 2%;
+  padding-right: 20%;
+  background-color: white;
+  color: #272829;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.content h3 {
+  font-size: 22px;
+}
+
+.content h4 {
+  font-size: 16px;
+}
+
+.subtypes {
+  text-indent: 3%;
+}
+
+.bettas p {
+  text-indent: 50px;
+}
+
+.splendens p {
+  text-indent: 5%;
+}
+
+.splendens ul {
+  list-style-type: none;
+}
+
+.care {
+  text-indent: 5%;
+}
+
+.pg_tank, .pg_water, .pg_food {
+  text-indent: 5%;
+}
+
+.mates p {
+  text-indent: 5%;
+}
+
+.mates ul {
+  text-indent: 5%;
+  list-style-type: none;
+}
+
+.female p {
+  text-indent: 5%;
+}
+
+.breeding p {
+  text-indent: 5%;
+}
+
+.fry p {
+  text-indent: 5%;
+}
+
+.fry h5 {
+  font-size: 14px;
+}
+
+.fry ul {
+  text-indent: 5%;
+  list-style-type: none;
+}
+
+.diseases ul {
+  text-indent: 5%;
+  list-style-type: none;
+}
+
+footer {
+  color: black;
+  font-size: 10px;
+  text-align: center;
+}
+
+hr {
+  width: 100%;
+  height: .5px;
+  border-width: 0;
+  background-color: #d1d1d1;
+  margin-left: 0;
+}
+
+.breeding img {
+  width: 35%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.splendens img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.splendens .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+}
+
+.splendens .column {
+  -webkit-box-flex: 33.33%;
+      -ms-flex: 33.33%;
+          flex: 33.33%;
+}
+
+.splendens .column1 {
+  -webkit-box-flex: 70%;
+      -ms-flex: 70%;
+          flex: 70%;
+}
+
+.splendens .column1 img {
+  width: 5%;
+}
+
+.variations {
+  font-weight: bold;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.variations img {
+  width: 70%;
+}
+
+.variations ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.variations .column1 img {
+  width: 45%;
+}
+
+.female img {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#tfb, #variations, #common, #bc, .colors, #bt, #dfm, #bb, #bf, #bdat {
+  text-align: center;
+}
+
+#tfb, #variations, #common, #bc, #bt, #dfm, #bb, #bf, #bdat {
+  border-top: 1px solid #aaaaaa;
+  border-bottom: 1px solid #aaaaaa;
+}
+/*# sourceMappingURL=style.css.map */
